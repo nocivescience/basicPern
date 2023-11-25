@@ -9,6 +9,10 @@ import {
 
 const router = Router();
 
+router.get("/inicio", (req, res) => {
+  res.send("Bienvenido a la API de Tareas");
+});
+
 // create a task
 router.post("/tasks", createTask);
 
